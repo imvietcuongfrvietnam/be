@@ -10,8 +10,8 @@ app.use(express.json());
 const studentRouter = require("./routes/StudentRoutes");
 app.use("/", studentRouter);
 
-app.listen(process.evn.PORT, () => {
-    console.log(`Server is running on port ${process.evn.PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
 });
 
 module.exports = app;
